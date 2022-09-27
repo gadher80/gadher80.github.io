@@ -60,13 +60,16 @@ border: 2px solid white;
 }
 
 
-.footer_bottom img { 
-    position:absolute; 
-    top:0;
-    left:50%;
-    margin-left:-125px;
+a {
+    display:inline-flex;
+    align-items: center;
+  }
+
+a:before,
+a:after {
+  flex: 1;
+  content: '';
+  height: 2px;
+  background: black;
 }
-
-
-
 
