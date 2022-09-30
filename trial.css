@@ -10,7 +10,6 @@ body{
     z-index: 1;
     background-color: #0A192F;
     padding: 0%;
-   
 
 }
 
@@ -176,7 +175,7 @@ body{
     width: 35px;
 }
 
-.projectContent{    
+/* .projectContent{    
     border: 2px solid white;
-}
+} */
 
