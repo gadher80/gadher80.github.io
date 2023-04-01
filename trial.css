@@ -1,5 +1,5 @@
 body{
-    background-color: #0A192F; 
+     background-color: #0A192F; 
     color:rgb(245, 239, 239) ;  
     z-index: 3;
     font-family: 'Roboto', sans-serif;
@@ -46,6 +46,18 @@ body{
 }
 
 
+  
+.navitems a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+.navbar {
+    background: linear-gradient(to right, #0A192F, #1A2A4E);
+  }
+  
+
 .circular--square { border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 
 }
 
@@ -70,7 +82,7 @@ body{
 .bild {
     margin-left: auto;
   }
-  
+ 
 .aboutText hr {
     width: 100%;
     margin-right: 20px;
@@ -315,11 +327,16 @@ body{
   }
   
   .contact-icon {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     margin-bottom: 10px;
   }
-  
+
+  .contact-icon.github {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+  }
   .contact-name {
     font-size: 20px;
     font-weight: bold;
@@ -335,10 +352,10 @@ body{
     flex-grow: 2;
     padding: 20px 20px 20px 20px;
     border-radius: 20px;
-
     /* cover 70 percent of each column */
     flex: 0 0 70%;
   }
 
 /* message box  class form control bigger*/
   
+

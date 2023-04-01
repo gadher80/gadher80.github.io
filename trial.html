@@ -6,35 +6,34 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="trial.css">
+    <script src="https://kit.fontawesome.com/5aa5aadca2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container navitems">
-                <a class="navbar-brand" href="#about"> HARDIKKKK... </a>
+                <a class="navbar-brand" href="#about">HARDIKKKK...</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">                    
-                    <li class="nav-item" >
-                        <a class="nav-link " aria-current="page" href="#work">Work</a>
-                    </li>
-                  
-                    <li class="nav-item">
-                        <a class="nav-link" href="CV.pdf" download>Resume</a>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#touch">Get in Touch</a>
-                    </li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.pdf" download>Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#touch">Get in Touch</a>
+                        </li>
                     </ul>
-
                 </div>
             </div>
-      </nav>
+        </nav>
 
     
       <div class="flex-container">
@@ -50,11 +49,13 @@
         <div class="flex-item two" id = "about">
 
             <div class="aboutText">
-                <h2 class = "about-items title">About me.<hr></h2>
-                <a class = "about-items bild">
-                    <img class="circular--square" src= "1614673063128-removebg-preview-removebg-preview.png" style="width:200px;height: 200px; border: 2px white solid;">
-                </a>   
+                <h2 class="about-items title">About me.<hr></h2>
+                <div class="about-items bild">
+                  <i class="fas fa-user-circle fa-5x" style="color: #007bff;"></i>
+                </div>
             </div>
+              
+              
 
             <div class="Aboutbio">
                 <p class = "about-items info"> As a data analyst, I'm actively looking for full-time opportunities to apply my analytical skills and contribute to meaningful projects. I'm passionate about using data-driven insights to solve real-world problems and thrive in collaborative environments. Let's connect and explore how we can work together.
@@ -72,12 +73,12 @@
 
         <div class="flex-item three" id="work">
                 <div class="projecttitle">
-                    <a class = " titlebild">                    
-                        <img class="circular--square" src= "codey.png" style="width:100%; max-width:250px; border: 2px white solid;">
+                    <a class="titlebild">                    
+                    <i class="fas fa-code fa-5x" style="color: #007bff;"></i>
                     </a>
-                    <h2 class = "about-items text2"> Projects.<hr style="color:  white; "></h2>
-                        
-                </div> 
+                    <h2 class="about-items text2">Projects.<hr style="color: white;"></h2>
+                </div>
+              
                 
                 <div class="projects">
 
@@ -135,10 +136,12 @@
         <div class="flex-item five">
             <div class="aboutText">
                 <h2 class="about-items title">Skills.<hr></h2>
-                <a class="about-items bild">
-                    <img class="circular--square" src="skills.png" style="width: 200px; height: 200px;border:2px white solid;">
-                </a>   
-            </div>
+                <div class="about-items bild">
+                    <i class="fas fa-cogs fa-5x" style="color: #007bff;"></i>
+                </div>
+              </div>
+              
+              
         
             <div class="skillsinfo">
                 <div class="skills-items">
@@ -185,12 +188,12 @@
         <div class="flex-item six" id="education">
             
             <div class="edTitle">
-                <a class = " titlebild">                    
-                    <img class="circular--square" src= "codey.png" style="border: 2px white solid; width: 200px; height: 200px;">
+                <a class="titlebild">                    
+                  <i class="fas fa-graduation-cap fa-5x" style="color: #007bff;"></i>
                 </a>
-                <h2 class = "about-items text2"> Education.<hr style="color:  white; "></h2>
-                    
-            </div>
+                <h2 class="about-items text2">Education.<hr style="color: white;"></h2>     
+              </div>
+              
             
             <div class="education-items">
               <div class="education-item">
@@ -219,21 +222,32 @@
          
         </div>
         <div class="flex-item four" id = "touch">
-                <div class="contactText">
-                    <h2 class="about-items text">Get in Touch.<hr></h2>
-                    <div class="contact-info">
-                    <div class="contact-items">
-                        <a href="https://www.linkedin.com/in/hardik-gadher-7604b1a1/"><img class="contact-icon" src="https://img.icons8.com/fluency/48/null/linkedin-circled.png"></a>
-                    </div>
-
-                    <div class="contact-items">
-                        <a href="mailto:gadher80@gmail.com"><img class="contact-icon" src="https://img.icons8.com/fluency/48/null/circled-envelope.png"></a>
-                    </div>
-                    <div class="contact-items">
-                        <a href="https://github.com/gadher80"><img class="contact-icon" src="https://img.icons8.com/nolan/64/github.png"></a>
-                    </div>
-
+            <div class="contactText">
+                <h2 class="about-items text">Get in Touch.<hr></h2>
+                <div class="contact-info">
+                  <div class="contact-items">
+                    <a href="https://www.linkedin.com/in/hardik-gadher-7604b1a1/">
+                      <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                  </div>
+                  <div class="contact-items">
+                    <a href="mailto:gadher80@gmail.com">
+                      <i class="far fa-envelope fa-3x"></i>
+                    </a>
+                  </div>
+                  <div class="contact-items">
+                    <a href="https://github.com/gadher80">
+                      <i class="fab fa-github fa-3x"></i>
+                    </a>
+                  </div>
+                  <div class="contact-items">
+                    <a href="https://www.xing.com/profile/Hardik_Gadher">
+                      <i class="fab fa-xing fa-3x"></i>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              
 
                 <!-- contact form to submit query -->
                 <div class="Submission contact-form">
