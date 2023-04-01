@@ -10,6 +10,7 @@ body{
     z-index: 1;
     background-color: #0A192F;
     padding: 0%;
+    margin-bottom: 10%;
 
 }
 
@@ -23,14 +24,12 @@ body{
     text-transform: uppercase;
     transition: 0.5s;
     margin: 0 10px;
-    
 
 }
 
 .navbar-toggler{
     background-color: rgb(245, 239, 239);
 }
-
 
 .navbar-nav{
     padding: 20px;
@@ -50,72 +49,83 @@ body{
 
 
 .flex-container{
-    /* border: 2px solid white; */
-    
     display:flex;
+    flex-direction: column;
+}
+
+.flex-item{
+    margin: 10%;
+    padding: 10%;
+}
+
+
+flex-item.two {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-flow: column wrap;
-    gap: 500px;
 }
 
-.flex-item.one{
-    padding-top: 450px;
+.aboutText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  
+.title {
+    place-content: start;
+    flex-grow: 2;
+  }
+  
+.bild {
+    margin-left: auto;
+  }
+  
+.aboutText hr {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+.flex-item.three {    
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: center;
+}
+
+.flex-item.four {
     align-self: center;
-}
-
-.flex-item.two{
-    align-self: center;
-}
-
-.flex-item.one{
-    align-self: center;
-}
-
-
-.aboutText{
-    
-    display:flex;     
-    align-items:  center;    
-    max-width: 800px;
-    flex-flow: row wrap;
-}
-
-
+  }
 .about-items.text,.about-items.text2{
     flex-grow: 2;
 }
 
 .about-items.info{   
-    padding-top :50px;
-    padding-bottom: 100px;
     flex-grow: 3;
     font-size: 20px;
     text-align: justify;
+    border-radius: 15px;
+    color :#fefeff;
+    /* margin: 0 10px; */
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+  
 }
 
-.flex-item.three {    
-     display: flex;
-     flex-flow: row wrap;   
-     justify-content: center;
-     padding-bottom: 200px;
-    }
-
-.projecttitle{
+.projecttitle, .skillsTitle{
     flex-grow: 2;
     display:flex;     
     align-items:  center;    
     flex-flow: row wrap;
-    max-width: 800px;
+    padding-bottom: 50px;
     
 }
+
 
 .about-items.text2{
     text-align: right;
 }
-.break {
-    flex-basis: 100%;
-    height: 0;
-  }
 
 .projects{
     display:flex;
@@ -130,22 +140,17 @@ body{
 
 .projects div{
 
-    padding: 10px 10px 10px 10px;   
+    /* padding: 10px 5px; */
     border-radius: 15px;
-    background-color: #112240;
-    color: #64FFDA;
-    box-shadow: aliceblue;    
-    margin: 0 10px;
+    background-color:aquamarine;
+    color :#0A192F;
+    /* margin: 0 10px; */
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;   
-    transition: 0.5s;
-    margin: 0 10px;    
-    width: 350px;
-    height: 350px;  
+    width: 300px;
+    height: 300px;  
 }
-
-
 
 
 .projects{
@@ -166,24 +171,58 @@ body{
     flex-direction: row;  
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid white;
+    padding-left: 10px;
 }
 
-.portfolio-icon{   
-    height: 35px;
-    width: 35px;
+.projectContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding : 20px 20px 20px 20px;
+    text-align: justify;
 }
 
-.projectContent{    
-    border: 2px solid white;
+.projectname{ 
+
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.flex-item.four {
-    align-self: center;
-    padding-top: 100px;
+.portfolio-icon{ 
+    height: 45px;
+    width: 45px;
+}
+
+.skillsinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
-  .contactText {
+  .skills-items {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 25%;
+  }
+  
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .skill-name {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+.contactText {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,4 +258,6 @@ body{
     font-weight: bold;
     letter-spacing: 1px;
   }
+  
+
   
