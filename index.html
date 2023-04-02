@@ -7,12 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="trial.css">
     <script src="https://kit.fontawesome.com/5aa5aadca2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+
   </head>
   <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg">
             <div class="container navitems">
-                <a class="navbar-brand" href="#about">HARDIKKKK...</a>
+                <a class="navbar-brand" href="#about">HOME</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,26 +39,42 @@
             </div>
         </nav>
 
+        <!-- 
+            <div class ="flex-container">
+                div.flex-item.one
+                div.flex-item.two
+                div.flex-item.three
+                div.flex-item.four
+                div.flex-item.five
+                div.flex-item.six
+            </div>
+         -->
     
       <div class="flex-container">
 
         <div class="flex-item one">
-            <p class="nameText" style ="font-size: 25px;">Yes, I am a Data Enthusiast </p>
-            <h1 style ="font-size: 60px;"> Hardik Gadher.</h1>
-            <h2 style ="font-size: 50px;"> I extract beatiful insights from Data</h2>
-            <div class = "shortInfo" style ="font-size: 40px;"> I’m a software engineer curretnly at Fraunhofer Institute.</div>
-            <a href="aboutme.html"></a>
-        </div>
+            <div class="cvphoto">
+              <img id="my-image"  src="1614673063128-removebg-preview-removebg-preview.png" alt="myphoto">
+            </div>
+            <div class="bio">
+              <h1 class="nameText">Hardik Gadher</h1>
+              <p class="tagline">Data Enthusiast | Analytics Expert</p>
+              <hr>
+              <h3 class="intro">Transforming complex data into powerful insights - that's what I do.
+              </h3>
+            </div>
+          </div>
+          
+          
 
         <div class="flex-item two" id = "about">
 
             <div class="aboutText">
-                <h2 class="about-items title">About me.<hr></h2>
+                <h2 class="about-items title"> About me.<hr></h2>
                 <div class="about-items bild">
-                  <i class="fas fa-user-circle fa-5x" style="color: #007bff;"></i>
+                  <i class="fas fa-user-circle fa-5x animated" style="color: #007bff;"></i>
                 </div>
-            </div>
-              
+              </div>
               
 
             <div class="Aboutbio">
@@ -72,9 +92,9 @@
         </div>
 
         <div class="flex-item three" id="work">
-                <div class="projecttitle">
+                <div class="aboutText projecttitle">
                     <a class="titlebild">                    
-                    <i class="fas fa-code fa-5x" style="color: #007bff;"></i>
+                    <i class="fas fa-code fa-5x animated" style="color: #007bff;"></i>
                     </a>
                     <h2 class="about-items text2">Projects.<hr style="color: white;"></h2>
                 </div>
@@ -82,15 +102,16 @@
                 
                 <div class="projects">
 
+
+
                         <div class="projects-items project1">
 
                             <div class="project-info">
-                                <h3 class="projectname project1">Portfolio</h3>
-                                <a href ="https://github.com/gadher80/Portfolio"><img class="portfolio-icon" src="icons8-github-624.png" style="width:50px;height: 50px; "></a>
+                            <h3 class="projectname project1">Portfolio</h3>
+                            <a href ="https://github.com/gadher80/Portfolio"><img class="portfolio-icon" src="icons8-github-624.png" style="width:50px;height: 50px; "></a>
                             </div>
-
                             <div class="projectContent one">Experience my skills and creativity through my portfolio website, beautifully designed using HTML and CSS.
-                            </div>    
+                            </div>  
 
                         </div>
                         
@@ -130,14 +151,19 @@
                             
                         </div>
 
+                        <!-- Button- container for read more -->
+                        <div class="button-container" style="text-align: right; margin-top: 20px;">
+                            <a href="https://github.com/gadher80?tab=repositories" class="btn btn-primary">Read More</a>
+                        </div>
+
                 </div>              
 
         </div>
         <div class="flex-item five">
             <div class="aboutText">
-                <h2 class="about-items title">Skills.<hr></h2>
+                <h2 class="about-items title">Tech Stacks.<hr></h2>
                 <div class="about-items bild">
-                    <i class="fas fa-cogs fa-5x" style="color: #007bff;"></i>
+                    <i class="fas fa-cogs fa-5x animated" style="color: #007bff;"></i>
                 </div>
               </div>
               
@@ -166,7 +192,7 @@
                     <p class="skill-name">MySQL</p>
                 </div>
                 <div class="skills-items">
-                    <p class="skill-name" alt="Django icon" class="skill-icon" style="font-size: 40px;color: #0A192F ;background-color: white; border-radius: 10px;margin: 10px;padding-left: 10px; padding-right: 10px; padding-bottom: 8%; ">django</p>
+                    <p class="skill-name" alt="Django icon" class="skill-icon" style="font-size: 60px;color: #ffffff; width:80px;height:80px;;border-radius: 10px;">dj</p>
                     <p class="skill-name"> Django </p>
                 </div>
         
@@ -187,12 +213,12 @@
         
         <div class="flex-item six" id="education">
             
-            <div class="edTitle">
+            <div class="aboutText edTitle">
                 <a class="titlebild">                    
                   <i class="fas fa-graduation-cap fa-5x" style="color: #007bff;"></i>
                 </a>
                 <h2 class="about-items text2">Education.<hr style="color: white;"></h2>     
-              </div>
+            </div>
               
             
             <div class="education-items">
@@ -201,18 +227,20 @@
                   <p>2018-2021</p>
                 </div>
                 <div class="education-info">
-                  <h3>Master's in Optical Technologies</h3>
+                  <h4>Master's in Optical Technologies</h4>
                   <p>Leibniz University, Hannover, Germany</p>
                 </div>
+                
               </div>
               <div class="education-item">
                 <div class="education-year">
                   <p>2013-2017</p>
                 </div>
                 <div class="education-info">
-                  <h3>Bachelor's in Mechanical Engineering</h3>
+                  <h4>Bacherlor's in Mechanical Engineering</h4>
                   <p>Charusat University, Anand, India</p>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -227,22 +255,22 @@
                 <div class="contact-info">
                   <div class="contact-items">
                     <a href="https://www.linkedin.com/in/hardik-gadher-7604b1a1/">
-                      <i class="fab fa-linkedin fa-3x"></i>
+                      <i class="fab fa-linkedin fa-3x animated "></i>
                     </a>
                   </div>
                   <div class="contact-items">
                     <a href="mailto:gadher80@gmail.com">
-                      <i class="far fa-envelope fa-3x"></i>
+                      <i class="far fa-envelope fa-3x "></i>
                     </a>
                   </div>
                   <div class="contact-items">
                     <a href="https://github.com/gadher80">
-                      <i class="fab fa-github fa-3x"></i>
+                      <i class="fab fa-github fa-3x "></i>
                     </a>
                   </div>
                   <div class="contact-items">
                     <a href="https://www.xing.com/profile/Hardik_Gadher">
-                      <i class="fab fa-xing fa-3x"></i>
+                      <i class="fab fa-xing fa-3x "></i>
                     </a>
                   </div>
                 </div>
@@ -250,23 +278,41 @@
               
 
                 <!-- contact form to submit query -->
-                <div class="Submission contact-form">
+                <div class="contact-form">
                     <form action="index.php" method="post">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required style="width: 400px;">
-                        <br>
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        <br>
-                        <textarea name="message" class="form-control" placeholder="Message" row="4" required style="height: 100%;"></textarea>
-                        <br>
-                        <input type="submit" name="submit" class="form-control submit" value="SEND MESSAGE">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4" required></textarea>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message
+                        </button>
+                      </div>
                     </form>
-                </div>
+                  </div>
+                  
+                  
 
                   
         </div>
         
                        
     </div>
+
+    <footer>
+        <div class="container">
+          <p>&copy; 2023 Hardik Gadher. All rights reserved.</p>
+        </div>
+      </footer>
+      
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
