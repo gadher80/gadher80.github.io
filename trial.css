@@ -87,7 +87,6 @@ body{
   }
  
 .aboutText hr {
-    width: 100%;
     margin-right: 20px;
   }
 
@@ -110,13 +109,12 @@ body{
 
 .about-items.info{   
     flex-grow: 3;
-    font-size: px;
     text-align: justify;
     border-radius: 15px;
     padding: 20px 20px 20px 20px;
     color :#fefeff;
     /* margin: 0 10px; */
-    font-size: 18px;
+    font-size: 1.125rem;
     /*  */
     letter-spacing: 1px;
 
@@ -215,7 +213,7 @@ body{
 }
 
 .projectname{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -296,7 +294,7 @@ body{
   }
   
   .skill-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -404,7 +402,7 @@ body{
     margin-bottom: 10px;
   }
   .contact-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -421,7 +419,7 @@ body{
   
   .form-title {
     color: #007bff;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
@@ -433,7 +431,7 @@ body{
   
   .form-group label {
     display: block;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     margin-bottom: 5px;
   }
@@ -443,7 +441,7 @@ body{
     border: 2px;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(10, 25, 47, 0.1);
-    font-size: 16px;
+    font-size: 1rem;
     padding: 10px;
     width: 100%;
   }
@@ -460,10 +458,10 @@ body{
     border-radius: 10px;
     color: #FFFFFF;
     cursor: pointer;
-    font-size: 18px;
     font-weight: 600;
     padding: 10px 20px;
     transition: background-color 0.2s ease-in-out;
+    size: 100%;
   }
   
   .submit-btn:hover {
@@ -509,17 +507,17 @@ body{
   }
 
   .nameText {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: bold;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: bold;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bold;
   }
 
@@ -564,7 +562,7 @@ body{
   }
   
   .tagline {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     margin-top: 20px;
     text-transform: uppercase;
@@ -572,7 +570,7 @@ body{
   }
   
   .nameText {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
@@ -580,7 +578,7 @@ body{
   }
   
   .intro {
-    font-size: 40px;
+    font-size: 2.25rem ;
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
