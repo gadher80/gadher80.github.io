@@ -5,7 +5,6 @@ body {
     z-index: 3;
     font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
   }
   
 
@@ -64,21 +63,22 @@ body {
     place-content: start;
     flex-grow: 2;
   }
-  .bild {
-    margin-left: auto;
-  }
+  
   .aboutText hr {
     margin-right: 20px;
   }
-  .flex-item.three {
+  .flex-item {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: center;
-  }
-  .flex-item.four {
     align-self: center;
+    margin: 10%;
+    padding: 10%;
   }
+
+
+ 
   .about-items.text, .about-items.text2 {
     flex-grow: 2;
   }
@@ -88,8 +88,32 @@ body {
     border-radius: 15px;
     padding: 20px 20px 20px 20px;
     color: #fefeff;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
+  }
+
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .about-items.info {
+      font-size: 0.8rem;
+      text-align: justify;
+      padding: 0%;
+      border: 1px solid #007bff;
+      margin: 0%;
+    
+    }
+  }
+
+ 
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .flex-item.about{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10%;
+      padding: 0%;
+    }
   }
   .fa-user-circle:hover {
     transform: scale(1.2);
@@ -106,6 +130,24 @@ body {
     box-shadow: 0px 0px 10px #007bff;
     opacity: 1;
   }
+
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .bio, .intro, .info{
+      font-size: 0.5rem;
+      text-align: center;
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .about-items.text, .about-items.text2, .about-items.title {
+      flex-grow: 2;
+
+    }
+  }
+  
   .projecttitle, .edTtile {
     flex-grow: 2;
     display: flex;
@@ -119,6 +161,30 @@ body {
     flex-grow: 2;
     margin-bottom: 5%;
     padding-bottom: 50px;
+  }
+
+
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .aboutText {
+      flex-direction: column-reverse;
+      justify-self: center;
+      align-items: center;
+      text-align: center;
+
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .flex-item.education{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10%;
+      padding: 0%;
+    }
   }
   .about-items.text2 {
     text-align: right;
@@ -199,6 +265,17 @@ body {
   }
   .aboutText i:hover {
     transform: scale(1.2);
+  }
+
+  @media (max-width: 768px) {
+    /* Set font-size to 0.9rem for screens smaller than 768px */
+    .flex-item.skils{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10%;
+      padding: 0%;
+    }
   }
   .skillsinfo {
     display: flex;
@@ -288,13 +365,22 @@ body {
     font-size: 1.2rem;
     margin-bottom: 5px;
   }
+ 
+  .education-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
   
-  @media screen and (max-width: 767px) {
+  @media  (max-width: 767px) {
     .education-items {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column;    
     }
+  }
     
+
     .education-item {
       width: 80%;
     }
@@ -350,21 +436,14 @@ body {
     letter-spacing: 1px;
   }
   .contact-form {
-    border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(10, 25, 47, 0.3);
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
-    max-width: 600px;
+    max-width: 100%;
     padding: 40px;
+    
   }
-  .form-title {
-    color: #007bff;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    text-align: center;
-  }
+  
   .form-group {
     margin-bottom: 20px;
   }
@@ -373,15 +452,21 @@ body {
     font-size: 1.125rem;
     font-weight: 500;
     margin-bottom: 5px;
+    text-align: left;
   }
   .form-group input, .form-group textarea {
-    border: 2px;
-    border-radius: 5px;
+    
     box-shadow: 0px 2px 5px rgba(10, 25, 47, 0.1);
     font-size: 1rem;
     padding: 10px;
     width: 100%;
+    text-align: left;
   }
+
+  .form-group input, .form-group textarea  {
+    width: 300px; /* or any other suitable value */
+  }
+  
   .form-group textarea {
     resize: none;
   }
@@ -421,16 +506,18 @@ body {
     margin: 0;
   }
   /* message box class form control bigger*/
-  .myphoto {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid black;
-  }
+
+  
   .nameText {
     font-size: 1.5625rem;
     font-weight: bold;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
+
   h1 {
     font-size: 3.75rem;
     font-weight: bold;
@@ -444,32 +531,36 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
-  .flex-item {
-    margin: 10%;
-    padding: 10%;
-  }
-  
+
   .flex-item:hover {
     transform: scale(1.05);
   }
+@media (max-width: 768px) {
+  /* Set cvphoto container to 100px width and height */
   .cvphoto {
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    width: 100px;
+    height: 100px;
   }
-  .cvphoto img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+}
+.cvphoto {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.cvphoto img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
   .bio {
     margin-top: 40px;
+    text-align: center;
   }
   .tagline {
     font-size: 1.25rem;
@@ -478,23 +569,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  .nameText {
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+
   .intro {
     font-size: 2.25rem;
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
   }
-  .flex-item.one {
-    background-color: #0A192F;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
