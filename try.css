@@ -127,7 +127,6 @@ body {
   }
   .Aboutbio:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 0px 10px #007bff;
     opacity: 1;
   }
 
