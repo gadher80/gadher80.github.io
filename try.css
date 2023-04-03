@@ -26,7 +26,7 @@ body {
     transition: 0.5s;
   }
   .navbar-brand:hover {
-    color: #E31B6D;
+    color: #007bff;
   }
   .navitems a {
     color: #fff;
@@ -38,7 +38,7 @@ body {
     margin: 0 1.5rem;
   }
   .navitems a:hover {
-    color: #E31B6D;
+    color: #007bff;
   }
   .navbar-toggler {
     background-color: #fff;
@@ -55,7 +55,7 @@ body {
     transition: 0.5s;
   }
   .navbar-nav .nav-link:hover {
-    color: #E31B6D;
+    color: #007bff;
     background-color: transparent;
   }
   
@@ -74,7 +74,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-self: center;
-    margin: 10%;
+    margin-bottom: 2%;
     padding: 10%;
   }
 
@@ -150,8 +150,7 @@ body {
     flex-direction: row;
     align-items: center;
     flex-grow: 2;
-    margin-bottom: 5%;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
 
@@ -166,6 +165,15 @@ body {
     }
   }
 
+ @media (max-width:768px){
+    .projecttitle, .edTitle{
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+    }
+
+ }
 
   @media (max-width: 768px) {
     /* Set font-size to 0.9rem for screens smaller than 768px */
@@ -240,22 +248,20 @@ body {
     height: 45px;
     width: 45px;
   }
-  .projectname:hover, .projectContent:hover {
-    color: white;
-  }
+ 
   .projectinfo:hover {
     background-color: #011b42;
   }
   .projects-items {
-    background-color: #0A192F;
+    background-color: white;
     border: 1px solid #007bff;
+    color: #0056b3;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #007bff;
     transition: all 0.3s ease;
-    opacity: 0.8;
   }
   .projects-items:hover, .projects-items:focus {
-    border: 2px solid #007bff;
+    border: 2px solid white;
     box-shadow: 0px 0px 10px #007bff;
     opacity: 1;
     transform: translateY(-10px);
@@ -277,26 +283,37 @@ body {
       padding: 0%;
     }
   }
+
+  /* 4 icons in a skillsinfo */
+
   .skillsinfo {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 20px 20px 20px;
-    border-radius: 15px;
+    padding: 20px;
   }
-  .skillsinfo :hover {
-    transform: scale(1.2);
-    color: white;
-    transition: all 0.3s ease;
-    border-radius: 15px;
-  }
+  
   .skills-items {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    max-width: 25%;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 33%;
+    padding: 10px;
   }
+  
+  @media (max-width: 767px) {
+    .skills-items {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    }
+  }
+
+
   .skill-icon {
     width: 100px;
     height: 100px;
@@ -338,8 +355,9 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #007bff;
+    color: #0056b3;
     border-radius: 10px;
-    background-color: #0A192F;
+    background-color: white;
     box-shadow: 0px 0px 5px #007bff;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -450,7 +468,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
   }
   .contact-icon {
     height: 80px;
@@ -578,9 +596,7 @@ body {
     flex-direction: column;
   }
 
-  .flex-item:hover {
-    transform: scale(1.05);
-  }
+
 @media (max-width: 768px) {
   /* Set cvphoto container to 100px width and height */
   .cvphoto {
