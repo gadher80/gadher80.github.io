@@ -278,18 +278,12 @@ a {
   
 
  
-  .projectinfo:hover {
-    background-color: #011b42;
-  }
- 
+
   .projects-items:hover, .projects-items:focus {
     opacity: 1;
     transform: translateY(-10px);
+    color: white;
   }
-  .projects-items.project1:active {
-    border: 2px solid #007bff;
-  }
-
 
   @media (max-width: 768px) {
     /* Set font-size to 0.9rem for screens smaller than 768px */
