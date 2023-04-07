@@ -15,11 +15,13 @@
 <body class="pattern">
 	<div class="container ">
 		<nav class="navbar pattern navbar-expand-lg">
-			<div class="container navitems"> <a class="navbar-brand" href="#about">HOME</a>
+			<div class="container navitems"> <a class="navbar-brand" href="#about">Home</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item"> <a class="nav-link" href="#work">Work</a> </li>
+						<!-- add / in between -->
+						
 						<li class="nav-item"> <a class="nav-link" href="CV.pdf" target="_blank">Resume</a> </li>
 						<li class="nav-item"> <a class="nav-link" href="#education">Education</a> </li>
 						<li class="nav-item"> <a class="nav-link" href="#touch">Get in Touch</a> </li>
@@ -29,20 +31,17 @@
 			</div>
 		</nav>
 		<div class="flex-container">
-			<div class="flex-item">
-				<div class="cvphoto"> <img id="my-image" src="1614673063128-removebg-preview-removebg-preview.png" alt="myphoto"> </div>
+			<div class="flex-item profile">
+
 				<div class="bio">
-					<h1 class="nameText">Hardik Gadher</h1>
-					<p class="tagline">Data Enthusiast</p>
-					<hr>
-					<h3 class="intro">Transforming complex data into powerful insights.
-              </h3> </div>
+					<img class = "cvphoto" id="my-image" src="spy.png" alt="myphoto">
+					<h3 class="nameText">Hi, I'm Hardik</h3>
+					<h3 class="intro">Transforming complex data into powerful insights.</h3> 
+				</div>
 			</div>
 			<div class="flex-item about" id="about">
-				<div class="aboutText">
-					<h2 class="about-items title"> About me.<hr></h2>
-					<div class="about-items bild"> <i class="fas fa-user-circle fa-5x animated" style="color: #007bff;"></i> </div>
-				</div>
+				<h3 class="about-items text2">Unveiling a Data Fresher's Journey...
+				</h3>
 				<div class="Aboutbio">
 					<p class="about-items info"> As a data analyst, I'm actively looking for full-time opportunities to apply my analytical skills and contribute to meaningful projects. I'm passionate about using data-driven insights to solve real-world problems and thrive in collaborative environments. Let's connect and explore how we can work together.
 						<br>
@@ -51,89 +50,84 @@
 						<br> Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients. </p>
 				</div>
 			</div>
-			<div class="flex-item" id="work">
-				<div class="aboutText projecttitle">
-					
-					<a class="titlebild"> <i class="fas fa-code fa-5x animated" style="color: #007bff;"></i> </a>
-					<h2 class="about-items text2">Projects.<hr style="color: white;"></h2> </div>
+			<div class="flex-item projectsSe" id="work">
+	
+				<h3 class="about-items text2">Demonstrating my ability to deliver impactful results through projects
+				</h3> 
 					
 				<div class="projects">
-					<div class="projects-items ">
-						<div class="project-info">
-							<h3 class="projectname project1">Portfolio</h3>
-							<a href="https://github.com/gadher80/Portfolio"><i class="fa fa-address-book fa-3x"></i>
-              </a>
+					<a href="https://github.com/gadher80/Portfolio">
+						<div class="projects-items project1">
+							<div class="project-info">
+								<i class="fa fa-address-book fa-3x" style="color: white"></i>
+								<h3 class="projectname project1">Portfolio</h3>
+							</div>
+							<div class="projectContent one">Experience my skills and creativity through my portfolio website, beautifully designed using HTML and CSS. </div>
 						</div>
-						<div class="projectContent one">Experience my skills and creativity through my portfolio website, beautifully designed using HTML and CSS. </div>
-					</div>
-					<div class="projects-items">
-						<div class="project-info">
-							<h3 class="projectname project1">Signal Data Analyis</h3>
-							<a href="https://github.com/gadher80/Portfolio"><i class="fa fa-chart-line fa-3x"></i>
-              </a>
+					</a>
+					<a href="https://github.com/gadher80/Signal-Data-Analysis">
+						<div class="projects-items project2">
+							<div class="project-info">
+								<i class="fa fa-chart-line fa-3x" style="color: white"></i>
+								<h3 class="projectname project2">Signal Data Analysis</h3>
+							</div>
+							<div class="projectContent two">Uncover insights and evaluate performance of radio signal receiver through Exploratory Data Analysis (EDA). </div>
 						</div>
-						<div class="projectContent one">Uncover insights and evaluate performance of radio signal receiver through Exploratory Data Analysis (EDA). </div>
-					</div>
-					<div class="projects-items">
-						<div class="project-info">
-							<h3 class="projectname project1">Data Wrangler
-                                </h3>
-							<a href="https://github.com/gadher80/Portfolio"><i class="fa fa-cogs fa-3x"></i>
-              </a>
+					</a>
+					<a href="https://github.com/gadher80/Data-Wrangler">
+						<div class="projects-items project3">
+							<div class="project-info">
+								<i class="fa fa-cogs fa-3x" style="color: white"></i>
+								<h3 class="projectname project3">Data Wrangler</h3>
+							</div>
+							<div class="projectContent three">Transform and clean complex data into meaningful insights with my Data Wrangling and Processing project. </div>
 						</div>
-						<div class="projectContent one">Transform and clean complex data into meaningful insights with my Data Wrangling and Processing project. </div>
-					</div>
-          <!-- when I click on any  project it should open link -->
-            <div class="projects-items">
-              <div class="project-info">
-                <h3 class="projectname project1">Cover Letter Generator</h3>
-                <a href="https://github.com/gadher80/Portfolio"><i class="fa fa-file-alt fa-3x"></i>
-                </a>
-
-              </div>
-              <div class="projectContent one">Craft professional cover letters effortlessly with my Cover Letter Generator, highlighting key inputs in a compelling way. </div>
-            </div> 
-
-					</div>
-					<!-- Button- container for read more -->
-					<div class="button-container" style="text-align: right; margin-top: 20px;"> <a href="https://github.com/gadher80?tab=repositories" class="btn btn-primary">Read More</a> </div>
+					</a>
+					<a href="https://github.com/gadher80/Cover-Letter-Generator">
+						<div class="projects-items project4">
+							<div class="project-info">
+								<i class="fa fa-file-alt fa-3x" style="color: white"></i>
+								<h3 class="projectname project4">Cover Letter Generator</h3>
+							</div>
+							<div class="projectContent four">
+								Craft professional cover letters effortlessly with my Cover Letter Generator, highlighting key inputs in a compelling way.
+							</div>
+						</div>
+					</a>
 				</div>
+				
+					<div class="button-container" style="text-align: right; margin-top: 20px; "> 
+						<a href="https://github.com/gadher80?tab=repositories" class="btn btn-primary" style="background-color:#1A1A1A; border-radius: 0%; border: 0;">More
+							<i class="fa-sharp fa-solid fa-square-up-right" style="color: #ffffff;"></i></a> 
+					</div>
 			</div>
-			<div class="flex-item skils">
-				<div class="aboutText">
-					<h2 class="about-items title">Tech Stacks.<hr></h2>
-					<div class="about-items bild"> <i class="fas fa-cogs fa-5x animated" style="color: #007bff;"></i> </div>
-				</div>
+			<div class="flex-item skills">
+				<h3 class="about-items text2">Empowering innovation with a dynamic skillset and a passion for technology
+				</h3> 
 				<div class="skillsinfo">
-					<div class="skills-items"> <img src="python.svg" alt="Python icon" class="skill-icon" style="width:100px;height:100px;">
+					<div class="skills-items"> <img src="python.svg" style="
+						color: white;" alt="Python icon" class="skill-icon" style="width:100px;height:100px;">
 						<p class="skill-name">Python</p>
 					</div>
           <div class="skills-items">
-						<p class="skill-name" alt="Django icon" class="skill-icon" style="font-size: 60px;color: #ffffff; width:80px;height:80px;;border-radius: 10px;">dj</p>
+						<p class="skill-name" alt="Django icon" class="skill-icon" style="font-size: 60px; width:80px;height:80px;;border-radius: 10px;">dj</p>
 						<p class="skill-name"> Django </p>
 					</div>
-          <div class="skills-items"> <img src="pandas_mark.svg" alt="Pandas icon" class="skill-icon" style="width:100px;height:100px; background-color: aliceblue;">
+          <div class="skills-items"> <img src="pandas-1324440210192088068.svg" alt="Pandas icon" class="skill-icon" style="width:100px;height:100px;">
 						<p class="skill-name">Pandas</p>
 					</div>
           <div class="skills-items"> <img src="mysql.svg" alt="MySQL icon" class="skill-icon" style="width:100px;height:100px;">
 						<p class="skill-name">MySQL</p>
 					</div>
-          <!-- for Pyqt5 -->
-          <div class="skills-items"> <img src="kisspng-the-qt-company-qt-creator-visual-designer-5ae0829d287e48.2351459215246629411659.png" alt="Pyqt5 icon" class="skill-icon" style="width:100px;height:100px;">
-            <p class="skill-name">Pyqt5</p>
-          </div>
+         
           <div class="skills-items"> <img src="https://img.icons8.com/color/240/null/power-bi.png" alt="Power BI icon" class="skill-icon" style="width:100px;height:100px;">
 						<p class="skill-name">Power BI</p>
 					</div>
 
-					<div class="skills-items"> <img src="js.svg" alt="JavaScript icon" class="skill-icon" style="width:100px;height:100px;">
-						<p class="skill-name">JavaScript</p>
-					</div>
 					
 					<div class="skills-items"> <img src="html.svg" alt="HTML icon" class="skill-icon" style="width:100px;height:100px;">
 						<p class="skill-name">HTML</p>
 					</div>
-					
 
 					
 					<div class="skills-items"> <img src="css.svg" alt="CSS icon" class="skill-icon" style="width:100px;height:100px;">
@@ -142,114 +136,115 @@
 				</div>
 			</div>
 		</div>
-	<div class="flex-item education" id="education">
-			<div class="aboutText edTitle">
-				<a class="titlebild"> <i class="fas fa-graduation-cap fa-5x" style="color: #007bff;"></i> </a>
-				<h2 class="about-items text2">Education &amp; Career<hr></h2> 
+		<div class="education-section">
+			<h3 class="about-items text2">Bridging the Gap between Education and Employment
+			</h3> 
+			<div class="education-list">
+			  <div class="education-item">
+				<div class="education-year">
+				  <p>Since Dec 2021</p>
+				</div>
+				<div class="education-info">
+				  <h4>Software Engineer</h4>
+				  <p>Fraunhofer IKTS, Arnstadt</p>
+				</div>
+			  </div>
+			  <div class="education-item">
+				<div class="education-year">
+				  <p>March 2021 - Spet 2021</p>
+				</div>
+				<div class="education-info">
+				  <h4>Hiwi- Data Analyst</h4>
+				  <p>Fraunhofer CSP, Halle</p>
+				</div>
+			  </div>
+			  <div class="education-item">
+				<div class="education-year">
+				  <p>Feb 2021- Oct 2021</p>
+				</div>
+				<div class="education-info">
+				  <h4>Master Thesis</h4>
+				  <p>Leibniz IPHT, Jena</p>
+				</div>
+			  </div>
+			  <div class="education-item">
+				<div class="education-year">
+				  <p>May 2020 - Jan 2021</p>
+				</div>
+				<div class="education-info">
+				  <h4>Intern Student</h4>
+				  <p>Leibniz IPHT, Jena</p>
+				</div>
+			  </div>
+			  <div class="education-item">
+				<div class="education-year">
+				  <p>April 2018 - Oct 2021</p>
+				</div>
+				<div class="education-info">
+				  <h4>M.Sc in Optical Technologies</h4>
+				  <p>Leibniz University, Hannover </p>
+				</div>
+			  </div>
+			  <div class="education-item">
+				<div class="education-year">
+				  <p>July 2013 - May 2017</p>
+				</div>
+				<div class="education-info">
+				  <h4>Bachelors in Mechanical Engineering</h4>
+				  <p>Charusat University, India</p>
+				</div>
+			  </div>
 			</div>
-			<div class="education-items">
-
-				<div class="education-item">
-					<div class="education-year">
-						<p>Since Dec 2021</p>
+		  </div>
+		  
+		  <div class="flex-item" id="touch">
+			<div class="contactText">
+				<h2 class="about-items text">Let's Connect, Make things happen.</h2>
+				<div class="contact-info">
+					<div class="contact-items">
+						<a href="https://www.linkedin.com/in/hardik-gadher-7604b1a1/">
+							<i class="fa-brands fa-linkedin fa-3x" style="color: #ffffff;"></i>
+						</a>
 					</div>
-					<div class="education-info">
-						<h4>Software Engineer</h4>
-						<p>Fraunhofer IKTS, Arnstadt</p>
+					<div class="contact-items">
+						<a href="mailto:gadher80@gmail.com"> 
+							<i class="fa-solid fa-square-envelope fa-3x" style="color: #ffffff;"></i>						
+						</a>
 					</div>
-				</div>
-
-				<div class="education-item">
-					<div class="education-year">
-						<p>March 2021- Spet 2021</p>
+					<div class="contact-items">
+						<a href="https://github.com/gadher80"> 
+							<i class="fa-brands fa-square-github fa-3x" style="color: #ffffff;"></i>
+						</a>
 					</div>
-					<div class="education-info">
-						<h4>Hiwi- Data Analyst</h4>
-						<p>Fraunhofer CSP, Halle</p>
-					</div>
-				</div>
-
-				<div class="education-item">
-					<div class="education-year">
-						<p>Feb 2021-Oct 2021</p>
-					</div>
-					<div class="education-info">
-						<h4>Master Thesis</h4>
-						<p>Leibniz IPHT, Jena</p>
+					<div class="contact-items">
+						<a href="https://www.xing.com/profile/Hardik_Gadher">
+							<i class="fa-brands fa-square-xing fa-3x" style="color: #ffffff;"></i>
+						</a>
 					</div>
 				</div>
-
-				<div class="education-item">
-					<div class="education-year">
-						<p>May 2020-Jan 2021</p>
-					</div>
-					<div class="education-info">
-						<h4>Intern Student</h4>
-						<p>Leibniz IPHT, Jena</p>
-					</div>
-				</div>
-
-				<div class="education-item">
-					<div class="education-year">
-						<p>April 2018 - Oct 2021</p>
-					</div>
-					<div class="education-info">
-						<h4>Masters in Optical Technologies</h4>
-						<p>Leibniz University, Hannover </p>
-					</div>
-				</div>
-
-				<div class="education-item">
-					<div class="education-year">
-						<p>July 2013 - May 2017</p>
-					</div>
-					<div class="education-info">
-						<h4>Bachelors in Mechanical Engineering</h4>
-						<p>Charusat University, India</p>
-				</div>
-					
+				<div class="contact-form">
+					<form action="index.php" method="post">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4" required></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="submitbtn btn-primary"  style="background-color:#1A1A1A; border-radius: 0%; border: 0; background-color: white; color: #1A1A1A;">Send Message </button>
+						</div>
+					</form>
 				</div>
 			</div>
-    </div>
-    
-	<div class="flex-item" id="touch">
-		<div class="contactText">
-			<h2 class="about-items text">Get in Touch.<hr></h2>
-			<div class="contact-info">
-				<div class="contact-items">
-					<a href="https://www.linkedin.com/in/hardik-gadher-7604b1a1/"> <i class="fab fa-linkedin fa-3x animated "></i> </a>
-				</div>
-				<div class="contact-items">
-					<a href="mailto:gadher80@gmail.com"> <i class="far fa-envelope fa-3x "></i> </a>
-				</div>
-				<div class="contact-items">
-					<a href="https://github.com/gadher80"> <i class="fab fa-github fa-3x "></i> </a>
-				</div>
-				<div class="contact-items">
-					<a href="https://www.xing.com/profile/Hardik_Gadher"> <i class="fab fa-xing fa-3x "></i> </a>
-				</div>
-			</div>
-			<div class="contact-form">
-				<form action="index.php" method="post">
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" required> </div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" required> </div>
-					<div class="form-group">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" rows="4" required></textarea>
-					</div>
-					<div class="form-group">
-						<button type="submit" class="submit-btn">Send Message </button>
-					</div>
-				</form>
-			</div>
+			
 		</div>
-		<!-- contact form to submit query -->
 		
-	</div>
 
 
 
