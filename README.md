@@ -5,9 +5,10 @@ This repository contains the code for my personal portfolio website. The website
 The website is built using HTML and CSS.
 
 # Usage
-To view the website, simply open the index.html file in a web browser. Alternatively, you can access the website by visiting the following URL: [insert URL here]
+<a href = "gadher80.github.io"> Demo Link </a>
 
 # Screenshots
+<img src = "Screenshot 2023-04-08 at 20.20.02.png" />
 
 
 # Contributing
