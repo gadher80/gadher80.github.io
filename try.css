@@ -28,16 +28,16 @@ body {
     padding: 1.5rem 0;
   }
   .navbar-brand {
-    color: #fff;
+    color:#8a8a8a;
     font-size: 1rem;
     letter-spacing: 1px;
     transition: 0.5s;
   }
   .navbar-brand:hover {
-    color: black
+    color: white
   }
   .navitems a {
-    color: #fff;
+    color:#8a8a8a;
     font-size: 1.1rem;
     letter-spacing: 1px;
     transition: 0.5s;
@@ -45,7 +45,7 @@ body {
   }
   
   .navbar-toggler {
-    background-color: #fff;
+    background-color:#8a8a8a;
   }
   .navbar-nav {
     font-size: 1.2rem;
@@ -54,7 +54,7 @@ body {
     padding-left: 0;
   }
   .navbar-nav .nav-link {
-    color: #fff;
+    color:#8a8a8a;
     padding: 0.5rem 1rem;
     transition: 0.5s;
   }
@@ -80,6 +80,7 @@ body {
     align-self: center;
     margin-bottom: 2%;
     padding: 10%;
+    color: #8a8a8a;
     
   }
 
@@ -91,7 +92,7 @@ body {
     text-align: justify;
     border-radius: 15px;
     padding: 20px 20px 20px 20px;
-    color: #fefeff;
+    color: #8a8a8a;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: lighter;
@@ -161,16 +162,7 @@ body {
 
  }
 
-  @media (max-width: 768px) {
-    /* Set font-size to 0.9rem for screens smaller than 768px */
-    .flex-item.education{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 10%;
-      padding: 0%;
-    }
-  }
+
 
 
   @media (max-width: 768px) {
@@ -200,11 +192,16 @@ body {
 
   .projects-items a {
     text-decoration: none;
-    color: white;
+    color: #8a8a8a;
 }
 a {
-  color: white; /* set the link color */
+  color:#8a8a8a; /* set the link color */
   text-decoration: none; /* remove the underline */
+}
+
+a:hover{
+  color:#8a8a8a; /* set the link color */
+  text-decoration: none;
 }
 
 .projectsSe{
@@ -215,6 +212,7 @@ a {
     align-items: center;
     gap: 10px;
     padding-top: 5%;
+    color: #8a8a8a;
 }
 
 
@@ -240,11 +238,14 @@ a {
     display: flex;
     flex-direction: column;
     background-color:#1A1A1A; 
-    height: 300px;
+    height: 350px;
     width: 250px;
     opacity: 1;
     font-weight:lighter;
     transition: all 0.3s ease;
+    border: 1px solid  #242424;
+
+
   }
 
  
@@ -260,7 +261,7 @@ a {
     padding-bottom: 40px;
     padding-top: 20px;
     text-align: justify;
-    justify-content: flex-end
+    justify-content: flex-end;
 
   }
   .projectname {
@@ -272,13 +273,9 @@ a {
 
   }
   
-
- 
-
   .projects-items:hover, .projects-items:focus {
     opacity: 1;
     transform: translateY(-10px);
-    color: white;
   }
 
   @media (max-width: 768px) {
@@ -301,6 +298,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    margin-top: 3%;
   }
   
   .skills-items {
@@ -310,8 +308,7 @@ a {
     width: 150px;
     height: 150px;
     justify-content: space-between;
-    text-align: center;
-    
+
   }
   
   .skills-items img {
@@ -358,6 +355,9 @@ a {
     margin-bottom: 30px;
     background-color: #1A1A1A;
     padding: 20px;
+    border: 1px solid  #242424;
+    color: #8a8a8a;
+
   }
 
   @media (max-width:768px){
@@ -369,13 +369,14 @@ a {
       padding: 20px;
       margin-left: 10%;
       margin-right: 10%;
+      color: #8a8a8a;
     }
 
   }
   
   .education-year {
     margin-bottom: 10px;
-    color: #fff;
+    color: #8a8a8a;
   }
   
   .education-year p {
@@ -384,7 +385,7 @@ a {
   }
   
   .education-info {
-    color: #fff;
+    color: #8a8a8a;
   }
   
   .education-info h4 {
@@ -399,13 +400,6 @@ a {
   }
   
 
-  .about-items.text2 {
-    font-size: 2.5rem;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    text-align: center;
-  }
 
   
 /*  Get in touch section */
@@ -457,7 +451,8 @@ a {
     padding: 40px;
     
   }
-  
+
+
   .form-group {
     margin-bottom: 20px;
   }
@@ -484,18 +479,17 @@ a {
     resize: none;
   }
 
-  .submit:hover {
-    background-color: #1A1A1A;
-    color: white;
-  }
+
   
+
 
   input, textarea {
     margin: 5px;
+    background-color: #8a8a8a;
 
   }
   footer {
-    color: #fff;
+    color:#8a8a8a;
     padding: 20px;
     text-align: center;
   }
@@ -531,7 +525,6 @@ a {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
-  /* zoom in*/
 
 }
 
@@ -541,11 +534,14 @@ a {
 
   .intro {  
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight:lighter;
+    /* fedding out */
+
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
     text-align: center;
+    color: #8a8a8a;
   }
   
 /* media query for intro */
@@ -555,9 +551,7 @@ a {
     font-size: 1.5rem;
     font-weight: lighter;
     text-align: center;
-   
   }
 }
-
 
   
