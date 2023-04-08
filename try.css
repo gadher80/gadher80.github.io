@@ -333,6 +333,7 @@ a {
     flex-direction: column;
     text-align: center;
     }
+
   }
 
   .contact-items:hover {
@@ -369,6 +370,7 @@ a {
       margin-left: 10%;
       margin-right: 10%;
     }
+
   }
   
   .education-year {
