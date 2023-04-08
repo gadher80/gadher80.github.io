@@ -85,9 +85,7 @@ body {
 
 
  
-  .about-items.text, .about-items.text2 {
-    font-weight: lighter;
-  }
+
   .about-items.info {
     flex-grow: 3;
     text-align: justify;
@@ -173,20 +171,16 @@ body {
       padding: 0%;
     }
   }
-  .about-items.text2 {
-    font-weight: lighter;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-  
-    
-  }
+
 
   @media (max-width: 768px) {
     /* Set font-size to 0.9rem for screens smaller than 768px */
     .about-items.text2 {
       text-align: center;
+      font-size: 1rem;
       flex-grow: 2;
+      margin-left: 20%;
+      margin-right: 20%;
     }
   }
 
@@ -222,6 +216,8 @@ a {
     gap: 10px;
     padding-top: 5%;
 }
+
+
   
 @media (max-width:768px) {
   .projects {
@@ -311,65 +307,48 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 150px;
     height: 150px;
-    margin: 20px;
-    color: #ffffff;
+    justify-content: space-between;
+    
   }
   
   .skills-items img {
-    filter: grayscale(100%) ;
     width: 80px;
     height: 80px;
   }
 
   .skills-items p {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1rem;
     font-weight: lighter;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+
   }
   
   @media (max-width: 767px) {
     .skills-items {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    text-align: center;
     }
   }
 
-
-  .skill-icon {
-    width: 100px;
-    height: 100px;
-  }
   .contact-items:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
   }
-  .skill-name {
-    font-size: 1.25rem;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    text-align: center;
-  }
+
   /* Education Section */
   
   /* Styling the Education section */
-  
-
-  .education-section h3 {
-    font-size: 2.5rem;
-    font-weight: lighter;
-    text-align: center;
-    padding:5%;
-  }
-  
+   
   .education-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 5%;
   }
   
   .education-item {
@@ -377,6 +356,18 @@ a {
     margin-bottom: 30px;
     background-color: #1A1A1A;
     padding: 20px;
+  }
+
+  @media (max-width:768px){
+    .education-item {
+      width: 200px;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: #1A1A1A;
+      padding: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
   }
   
   .education-year {
@@ -411,8 +402,8 @@ a {
     letter-spacing: 1px;
     margin-top: 10px;
     text-align: center;
-
   }
+
   
 /*  Get in touch section */
 
@@ -520,19 +511,6 @@ a {
     margin: 0;
     letter-spacing: 2px;
   }
-  @media (max-width: 768px) {
-    .nameText {
-      font-size: 1rem;
-    }
-
-
-    .intro {
-      font-size: 1rem;
-      }
-
-      
-    
-  }
 
   h1 {
     font-size: 3.75rem;
@@ -541,19 +519,8 @@ a {
     font-size: 3.125rem;
   }
   /* */
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-  }
 
 
-@media (max-width: 768px) {
-  /* Set cvphoto container to 100px width and height */
-  .cvphoto {
-    width: 50px;
-    height: 50px;
-  }
-}
 .cvphoto {
   margin-bottom: 5%;
   width: 150px;
@@ -565,21 +532,29 @@ a {
 
 }
 
-  .bio {
+.bio {
     text-align: center;
   }
 
-
-
-  .intro {
-    
-    font-size: 3.5rem;
-    text-align:center;
+  .intro {  
+    font-size: 3rem;
     font-weight: lighter;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
+    text-align: center;
   }
   
+/* media query for intro */
+
+@media (max-width:768px){
+  .intro{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+   
+  }
+}
+
 
   
