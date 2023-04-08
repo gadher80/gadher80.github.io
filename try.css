@@ -108,10 +108,33 @@ body {
     
     }
   }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
+    .about-items.info {
+      font-size: 1rem;
+      text-align: justify;
+      padding: 0%;
+      margin: 0%;
+    
+    }
+  }
+  
 
  
   @media (max-width: 768px) {
     /* Set font-size to 0.9rem for screens smaller than 768px */
+    .flex-item.about{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10%;
+      padding: 0%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
     .flex-item.about{
       flex-direction: column;
       align-items: center;
@@ -152,6 +175,17 @@ body {
     }
   }
 
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
+    .aboutText {
+      flex-direction: column-reverse;
+      justify-self: center;
+      align-items: center;
+      text-align: center;
+
+    }
+  }
+
  @media (max-width:768px){
     .projecttitle, .edTitle{
         flex-direction: column;
@@ -162,11 +196,35 @@ body {
 
  }
 
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles go here */
+  .projecttitle, .edTitle{
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+
+
+
 
 
 
   @media (max-width: 768px) {
     /* Set font-size to 0.9rem for screens smaller than 768px */
+    .about-items.text2 {
+      text-align: center;
+      font-size: 1rem;
+      flex-grow: 2;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
     .about-items.text2 {
       text-align: center;
       font-size: 1rem;
@@ -289,6 +347,17 @@ a:hover{
     }
   }
 
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
+    .flex-item.skils{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10%;
+      padding: 0%;
+    }
+  }
+
   /* 4 icons in a skillsinfo */
 
   .skillsinfo {
@@ -333,6 +402,15 @@ a:hover{
 
   }
 
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
+    .skills-items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+  }
+  
   .contact-items:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
@@ -372,6 +450,20 @@ a:hover{
       color: #8a8a8a;
     }
 
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles go here */
+    .education-item {
+      width: 200px;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: #1A1A1A;
+      padding: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+      color: #8a8a8a;
+    }
   }
   
   .education-year {
@@ -504,7 +596,8 @@ a:hover{
 
   
   .nameText {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
     margin: 0;
     letter-spacing: 2px;
   }
@@ -547,6 +640,15 @@ a:hover{
 /* media query for intro */
 
 @media (max-width:768px){
+  .intro{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles go here */
   .intro{
     font-size: 1.5rem;
     font-weight: lighter;
