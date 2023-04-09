@@ -5,7 +5,7 @@ This repository contains the code for my personal portfolio website. The website
 The website is built using HTML and CSS.
 
 # Usage
-<a href = "gadher80.github.io"> Demo Link </a>
+Check out my portfolio [here](https://gadher80.github.io/)!
 
 # Screenshots
 <img src = "Screenshot 2023-04-08 at 20.20.02.png" />
