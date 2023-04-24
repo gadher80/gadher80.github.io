@@ -258,7 +258,7 @@ a {
 }
 
 a:hover{
-  color:#8a8a8a; /* set the link color */
+  color:white; /* set the link color */
   text-decoration: none;
 }
 
@@ -272,7 +272,6 @@ a:hover{
     padding-top: 5%;
     color: #8a8a8a;
 }
-
 
   
 @media (max-width:768px) {
@@ -599,6 +598,7 @@ a:hover{
     font-weight: lighter;
     margin: 0;
     letter-spacing: 2px;
+    color: #fff;
   }
 
   h1 {
@@ -633,7 +633,7 @@ a:hover{
     margin-right: 10%;
     margin-top: 3%;
     text-align: center;
-    color: #8a8a8a;
+    color: white
   }
   
 /* media query for intro */
